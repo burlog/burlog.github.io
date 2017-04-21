@@ -3,16 +3,332 @@
 	<head>
 		<meta charset="utf-8" />
 		<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-		<script type="text/javascript">Loader.load();</script>
+		<script type="text/javascript">Loader.load(null, {poi:true});</script>
+
+		<style type="text/css" media="screen">
+			body {
+				font-family: arial;
+			}
+
+			input {
+				line-height: 32px;
+				height: 32px;
+			}
+
+			.box {
+				float: left;
+				padding-left: 1em;
+			}
+
+			.rbox {
+				float: right;
+				padding-left: 1em;
+			}
+
+			h2 {
+				margin: 0px;
+				margin-bottom: 1em;
+				background-color: #edffaf;
+				text-align: center;
+			}
+
+			h6 {
+				padding: 0px;
+				margin: 0px;
+				margin-top:1em;
+			}
+
+			h5 {
+				padding: 0px;
+				margin: 0px;
+				margin-bottom:1em;
+			}
+
+			.flight {
+				list-style-type: none;
+				padding-left: 1.1em;
+				background-image: url('http://thenextlevelseminar.com/wp-content/uploads/2014/10/flight.png');
+				background-size: 1em;
+				background-repeat: no-repeat;
+			}
+
+			.taxi {
+				list-style-type: none;
+				padding-left: 1.1em;
+				background-image: url('http://seeklogo.com/images/T/taxi-vehicle-sign-logo-04DAE3D598-seeklogo.com.gif');
+				background-size: 1em;
+				background-repeat: no-repeat;
+			}
+		</style>
 	</head>
 
 	<body>
-		<div id="m" style="height:380px"></div>
+		<div style="background-color:#a4d0f9; line-height:32px; margin-bottom: 1em; padding:0 1em 0 1em">
+			<div class="rbox">
+				<a href="#" target="_blank">Sign in</a>
+				<a href="#" target="_blank">Sign up</a>
+			</div>
+			<b>Plan you holyday in just few clicks!</b>
+			<div style="clear:both"></div>
+		</div>
+
+		<div>
+			<div class="box" style="width:50%">
+				<form action="#" style="padding-bottom:1em">
+					<input type="text" name="location" placeholder="Where you want to gou?" size="100" />
+					<input type="button" value="Go" />
+					<div class="rbox">
+						<input type="button" value="<" />
+						<input type="button" value="June" />
+						<input type="button" value="July" disabled />
+						<input type="button" value="August" />
+						<input type="button" value=">" />
+					</div>
+				</form>
+				<div id="m" style="height:780px; width:100%;"></div>
+			</div>
+
+			<div class="box" style="max-height:780px; overflow-y:hidden; width:15%">
+				<h2>Where can I stay?</h2>
+				<div>
+					<h3>Four Seasons Hotel Prague</h3>
+					<img src="https://s-ec.bstatic.com/images/hotel/square200/128/12867198.jpg" width="50%">
+					<div style="float:right; max-width:47%;">
+						<h5>Wonderful</h5>
+						Located in the Old Town in Prague, the 5-star Four Seasons...
+						<h6>Avg price: $200 per night</h6>
+					</div>
+					<hr>
+				</div>
+				<div style="background-color:#d2d5d9">
+					<h3>Residence Leon D'Oro</h3>
+					<img src="https://s-ec.bstatic.com/images/hotel/square200/931/93188810.jpg" width="50%">
+					<div style="float:right; max-width:47%">
+						<h5>Good</h5>
+						Residence Leon D’Oro occupies a recently renovated historic...
+						<h6>Avg price: $200 per night</h6>
+					</div>
+					<button style="width:100%">book now!</button>
+					<hr>
+				</div>
+				<div>
+					<h3>Best Western Plus Hotel Meteor Plaza</h3>
+					<img src="https://t-ec.bstatic.com/images/hotel/square200/696/69611336.jpg" width="50%">
+					<div style="float:right; max-width:47%">
+						<h5>Very Good</h5>
+						Occupying a historic building in Prague's center, the Meteor...
+						<h6>Avg price: $200 per night</h6>
+					</div>
+					<hr>
+				</div>
+				<div>
+					<h3>Best Western Plus Hotel Meteor Plaza</h3>
+					<img src="https://t-ec.bstatic.com/images/hotel/square200/696/69611336.jpg" width="50%">
+					<div style="float:right; max-width:47%">
+						<h5>Poor</h5>
+						Occupying a historic building in Prague's center, the Meteor...
+						<h6>Avg price: $200 per night</h6>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+			<div class="box" style="max-height:780px; overflow-y:hidden; width:15%">
+				<h2>How can I get there?</h2>
+				<div>
+					<div style="background-color:#d2d5d9">
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<button style="width:100%">buy now!</button>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+
+					<div>
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+
+					<div>
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+
+					<div>
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+
+					<div>
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+
+					<div>
+						<ul style="padding: 0px">
+							<li class="flight">Brno airport: 1.7.2017&nbsp;15:20</li>
+							<li class="flight">Prague airport: 1.7.2017&nbsp;17:20</li>
+							<li class="taxi">Prague airport: 1.7.2017&nbsp;17:40</li>
+							<li class="taxi">Prague dest: 1.7.2017&nbsp;18:10</li>
+						</ul>
+						Price:
+						<div class="rbox">
+							$500.0
+						</div>
+						<div style="clear:both"></div>
+						<hr>
+					</div>
+				</div>
+			</div>
+
+			<div class="box" style="max-height:780px; overflow-y:hidden; width:15%">
+				<div>
+					<h2>What can I do there?</h2>
+					<img src="https://img.obrazky.cz/?url=3173491cb22efa7a&size=2" width="100%" />
+					Narodni divadlo
+					<img src="https://img.obrazky.cz/?url=622b276ba7381c85&size=3" style="float:right" width="24" />
+					<img src="https://img.obrazky.cz/?url=1081e008a78d42f7&size=3" style="float:right" width="24" />
+					<button style="width:100%">buy tickets now!</button>
+					<div style="clear:both"></div>
+					<hr>
+				</div>
+
+				<div>
+					<img src="https://img.obrazky.cz/?url=6b06bdc3cba7fcc8&size=3" width="100%" />
+					Karluv most
+					<img src="https://img.obrazky.cz/?url=622b276ba7381c85&size=3" style="float:right" width="24" />
+					<img src="https://img.obrazky.cz/?url=1081e008a78d42f7&size=3" style="float:right" width="24" />
+					<div style="clear:both"></div>
+					<hr>
+				</div>
+
+				<div>
+					<img src="http://tvstav.cz/user/data/modul-images/7220-preview-nevsimal1.jpg" width="100%" />
+					Seznam.cz
+					<img src="https://img.obrazky.cz/?url=622b276ba7381c85&size=3" style="float:right" width="24" />
+					<img src="https://img.obrazky.cz/?url=1081e008a78d42f7&size=3" style="float:right" width="24" />
+					<div style="clear:both"></div>
+					<hr>
+				</div>
+
+				<div>
+					<img src="https://img.obrazky.cz/?url=518f4e09d15a5603&size=3" width="100%" />
+					CVUT FEL
+					<img src="https://img.obrazky.cz/?url=622b276ba7381c85&size=3" style="float:right" width="24" />
+					<img src="https://img.obrazky.cz/?url=1081e008a78d42f7&size=3" style="float:right" width="24" />
+					<div style="clear:both"></div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<hr>
+
+		<div>
+			<div class="box">
+				<ul>
+					<li><b>Flight costs</b>: $500.0</li>
+					<li><b>Car costs</b>: $250.0</li>
+					<li><b>Accommodation costs</b>: $250.0</li>
+
+				</ul>
+			</div>
+			<div class="box">
+				<ul>
+					<li><b>Vat</b>: $200.0</li>
+					<li><b>Fees</b>: $40.0</li>
+					<li><b>Persons</b>: 5</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h1>
+					<b>Total price</b>: $1,240.0
+				</h1>
+			</div>
+			<div>
+				<div class="rbox">
+					<img src="http://freevector.co/wp-content/uploads/2014/04/60889-woman.png" width="50" style="background-color:#d2d5d9" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/53119-man-with-short-hair-profile-avatar.png" width="50" style="background-color:#d2d5d9" />
+					<img src="http://freevector.co/wp-content/uploads/2014/04/60889-woman.png" width="50" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/53119-man-with-short-hair-profile-avatar.png" width="50" />
+					<img src="http://freevector.co/wp-content/uploads/2014/04/60889-woman.png" width="50" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/53119-man-with-short-hair-profile-avatar.png" width="50" />
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="http://freevector.co/wp-content/uploads/2014/05/56990-young-man-with-black-t-shirt.png" width="50" style="background-color:#d2d5d9" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/77269-girl-with-big-head.png" width="50" style="background-color:#d2d5d9" />
+					<img src="http://freevector.co/wp-content/uploads/2014/05/56990-young-man-with-black-t-shirt.png" width="50" style="background-color:#d2d5d9" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/77269-girl-with-big-head.png" width="50" />
+					<img src="http://freevector.co/wp-content/uploads/2014/05/56990-young-man-with-black-t-shirt.png" width="50" />
+					<img src="http://freevector.co/wp-content/uploads/2014/03/77269-girl-with-big-head.png" width="50" />
+				</div>
+			</div>
+		</div>
+
 		<script type="text/javascript" charset="utf-8">
-			var stred = SMap.Coords.fromWGS84(14.41, 50.08);
-			var mapa = new SMap(JAK.gel("mapa"), stred, 10);
-			mapa.addDefaultLayer(SMap.DEF_BASE).enable();
-			mapa.addDefaultControls();
+			var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+			var m = new SMap(JAK.gel("m"), center, 13);
+			m.addDefaultLayer(SMap.DEF_BASE).enable();
+			m.addDefaultControls();
+
+			var layer = new SMap.Layer.Marker();
+			m.addLayer(layer).enable();
+
+			var dataProvider = m.createDefaultDataProvider();
+			dataProvider.setOwner(m);
+			dataProvider.addLayer(layer);
+			dataProvider.setMapSet(SMap.MAPSET_BASE);
+			dataProvider.enable();
 		</script>
+
 	</body>
 </html>
